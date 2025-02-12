@@ -1,324 +1,230 @@
-/*
-CSS Credit: http://www.templatemo.com/
-*/
+/* Custom Modern Styling for Pages & Beyond */
 
-/* 
-Book Store Template 
-http://www.templatemo.com/preview/templatemo_086_book_store 
-*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap');
+
 body {
-	margin: 0;
-	padding: 0;
-	line-height: 1.5em;
-	font-family: Verdana, Arial, san-serif;
-	font-size: 11px;
-	color: #ffffff;
-	background: #4b4743;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #2c2c2c;
+    background: #f8f8f8;
 }
 
-a:link, a:visited { color: #e6e154; text-decoration: none; font-weight: bold;} 
-a:active, a:hover { color: #e6e154; text-decoration: underline;}
+/* Links */
+a:link, a:visited {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: bold;
+} 
 
-p {
-	margin: 0px;
-	padding: 0px;
+a:active, a:hover {
+    color: #023e8a;
+    text-decoration: underline;
 }
 
-img {
-	margin: 0px;
-	padding: 0px;
-	border: none;
-}
-
-
+/* Global Layout */
 .cleaner {
-	clear: both;
-	width: 100%;
-	height: 1px;
-	font-size: 1px;	
+    clear: both;
+    width: 100%;
+    height: 1px;
 }
 
 .cleaner_with_height {
-	clear: both;
-	width: 100%;
-	height: 30px;
-	font-size: 1px;	
+    clear: both;
+    width: 100%;
+    height: 30px;
 }
 
 .cleaner_with_width {
-	float: left;
-	width: 20px;
-	height: 30px;
-	font-size: 1px;	
+    float: left;
+    width: 20px;
+    height: 30px;
 }
 
-.buy_now_button a{
-	clear: both;
-	text-align: center;
-	display: block;
-	width: 100px;
-	padding: 4px 0 5px 0;
-	margin-bottom: 10px; 
-	background: url(images/templatemo_btn_02.jpg) no-repeat;
-	color: #FFFFFF;
-	font-weight: bold;
-	text-decoration: none;
+/* Buttons */
+.buy_now_button a, .detail_button a {
+    display: block;
+    text-align: center;
+    width: 120px;
+    padding: 8px 0;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    transition: background 0.3s ease;
 }
 
-.detail_button a{
-	clear: both;
-	text-align: center;
-	display: block;
-	width: 100px;
-	padding: 4px 0 5px 0;
-	margin-bottom: 10px; 
-	background: url(images/templatemo_btn_01.jpg) no-repeat;
-	color: #ffffff;
-	font-weight: bold;
-	text-decoration: none;
+.buy_now_button a:hover, .detail_button a:hover {
+    background: linear-gradient(135deg, #00b4d8, #0077b6);
 }
 
-#templatemo_container{
-	width: 960px;
-	margin: 0 auto;
-	padding: 0 10px;
-	background: #1c1c1b url(images/templatemo_bg.jpg) repeat-y;
+/* Container */
+#templatemo_container {
+    width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-
-/* menu */
-
+/* Navigation Menu */
 #templatemo_menu {
-	clear: both;
-	width: 960px;
-	height: 45px;
-	background: url(images/templatemo_menu_bg.jpg) no-repeat;
+    background: #023e8a;
+    padding: 10px 0;
+    border-radius: 5px;
 }
 
 #templatemo_menu ul {
-	padding: 13px 0 0 0;
-	margin: 0;
-	list-style: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
 }
 
-#templatemo_menu ul li{
-	display: inline;
+#templatemo_menu ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-#templatemo_menu ul li a{
-	float: left;
-	padding: 0 20px;
-	font-size: 12px;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	color: #969547;
+#templatemo_menu ul li a {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
 }
 
-#templatemo_menu li a:hover, #templatemo_menu li .current{
-	color: #fcf88e;
+#templatemo_menu ul li a:hover, #templatemo_menu ul li .current {
+    color: #ffd60a;
 }
 
-/* end of menu*/
-
-/* header */
+/* Header */
 #templatemo_header {
-	clear: both;
-	width: 960px;
-	height: 285px;
-	padding: 0;
-	margin: 0;
-	background: url(images/templatemo_header_bg.jpg) no-repeat;
+    text-align: center;
+    padding: 30px 0;
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    color: white;
+    border-radius: 5px;
 }
 
-#templatemo_header a,a:hover {
-	color: #ffffff;
+#templatemo_header h1 {
+    font-size: 28px;
+    font-weight: 600;
 }
 
-#templatemo_header #templatemo_special_offers {
-	float: left;
-	font-size: 14px;	
-	margin-top: 95px;
-	margin-left: 490px;
-	width: 180px;
+/* Offers Section */
+#templatemo_special_offers {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ff4d00;
 }
 
-#templatemo_special_offers a {
-	font-size: 12px;
-}
-
-#templatemo_special_offers  p {
-	margin: 0 0 20px 0;
-}
 #templatemo_special_offers p span {
-	font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-#templatemo_header #templatemo_new_books {
-	float: left;
-	margin-top: 90px;	
-	margin-left: 55px;
-	width: 180px;
-}
-
-#templatemo_new_books ul {
-	 margin: 0 0 10px 0;
-	 padding: 0 0 0 20px;
-}
-
-#templatemo_new_books li {
-	 margin: 0;
-	 padding: 0; 
-}
-
-
-/* end of header */
-
-
-/* content */
+/* Content */
 #templatemo_content {
-	clear: both;
-	width: 920px;
-	padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
 }
 
-#templatemo_content #templatemo_content_left {
-	float: left;
-	width: 188px;
-	padding: 10px;
-	background-color: #171716;
-	border: 1px solid #212120;
-}
-
-#templatemo_content #templatemo_content_right {
-	float: right;
-	width: 670px;
-}
-
-
-#templatemo_content_left .templatemo_content_left_section{
-	clear: both;
-	padding-bottom: 10px;
-	border-bottom: 1px solid #2b2b2a;
-	margin-bottom: 20px;
+/* Left Sidebar */
+#templatemo_content_left {
+    width: 250px;
+    padding: 15px;
+    background: #e9ecef;
+    border-radius: 5px;
 }
 
 .templatemo_content_left_section h1 {
-	font-size: 14px;
-	color: #cbc750;
-	padding: 0 0 5px 0;
-	margin: 0 0 10px 0;
-	border-bottom: 1px dotted #cbc750;
+    font-size: 18px;
+    color: #0077b6;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0077b6;
+    padding-bottom: 5px;
 }
 
 .templatemo_content_left_section ul {
-	padding: 0;
-	margin: 0;
+    list-style: none;
+    padding: 0;
 }
 
-.templatemo_content_left_section ul li{
-	padding: 0 0 3px 10px;	
-	list-style: none;
+.templatemo_content_left_section ul li {
+    padding: 5px 0;
 }
 
-.templatemo_content_left_section ul li a{
-	font-weight: normal;
-	text-decoration: none;
-	color: #969547;
+.templatemo_content_left_section ul li a {
+    color: #0077b6;
+    text-decoration: none;
 }
 
-.templatemo_content_left_section li a:hover, .templatemo_content_left_section li .current{
-	color: #fcf88e;
+.templatemo_content_left_section ul li a:hover {
+    color: #023e8a;
 }
 
-
-
-
-
-#templatemo_content_right .templatemo_product_box {
-	float: left;
-	width: 303px;
-	height: 210px;
-	padding: 10px;
-	border: 1px solid #333;
+/* Right Content */
+#templatemo_content_right {
+    width: 700px;
 }
 
-#templatemo_content_right h1 {
-	padding: 10px;
-	margin: 0 0 20px 0;
-	font-size: 15px;
-	color: #cbc750;
-	background: url(images/templatemo_h1_bg.jpg);
-}
-
-#templatemo_content_right h2 {
-	padding: 0 0 0 0;
-	margin: 0 0 20px 0;
-	font-size: 12px;
-	color: #e6e154;
-}
-
-#templatemo_content_right h3 {
-	padding: 0;
-	margin: 0 0 20px 0;
-	font-size: 18px;
-	color: #85391f;
-}
-
-#templatemo_content_right ul {
-	margin: 0 0 20px 0;
-	padding: 0 0 0 20px;
-	list-style: none;
-}
-
-#templatemo_content_right li {
-	padding: 0 0 3px 0;
-}
-
-#templatemo_content_right .image_panel {
-	float: left;
-	width: 100px;
-	margin-right: 20px;
-}
-
-#templatemo_content_right p {
-	text-align: justify;
-	padding: 0 0 8px 0;
-}
-
-.templatemo_product_box h1 span {
-	font-weight: normal;
+.templatemo_product_box {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #f1f1f1;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .templatemo_product_box img {
-	float: left;
-	margin-right: 20px;
+    width: 100px;
+    height: 150px;
+    margin-right: 15px;
+    border-radius: 5px;
 }
 
-.templatemo_product_box .product_info {
-	float: left;
-	width: 180px;
+.templatemo_product_box h1 {
+    font-size: 18px;
+    color: #0077b6;
+    margin-bottom: 8px;
 }
 
-.product_info p {
-	margin-bottom: 15px;
+.templatemo_product_box p {
+    font-size: 14px;
+    color: #555;
 }
 
-/* end of content */
+.templatemo_product_box h3 {
+    font-size: 18px;
+    color: #ff4d00;
+}
 
-/* footer */
+/* Footer */
 #templatemo_footer {
-	clear: both;
-	width: 960px;
-	padding: 20px 0px 20px 0;
-	text-align: center;
-	border-top: 1px solid #25211e;
-	color: #999;
-	background-color: #111110;
+    text-align: center;
+    padding: 20px 0;
+    background: #023e8a;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
-#templatemo_footer a{
-	color: #fff;
-	font-weight: normal;
+#templatemo_footer a {
+    color: #ffd60a;
+    text-decoration: none;
+    font-weight: 600;
 }
-/* end of footer */
+
+#templatemo_footer a:hover {
+    color: #fff;
+}
